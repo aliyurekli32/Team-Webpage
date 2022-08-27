@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+   
+}
+body{
+    background-color: ghostwhite;
+    
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    /* border: 1px solid red; */
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    margin: 4rem 0rem;
+    
+}
+.header1{
+    /* border: 1px solid red; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
+.paraf{
+    
+    font-family: "Segoe UI", Tahoma, Verdana,sans-serif;
+    display: flex;
+    /* justify-content: center; */
+    width: 25%;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.images{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
+
+img {
+    width: 250px;
+    border-radius: 40px;
+    box-shadow: 5px 5px 20px;
+    margin-bottom: 20px
+    
+}
+img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+    opacity: 0.9;
+}
+
+.images1{
+    /* border: 1px solid red; */
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    align-content: center;
+    /* flex-direction: column; */
+    margin-bottom: 3rem;
+}
+
+.x{
+    transform: translateY(50px);
+}
+
+span{
+    writing-mode: vertical-rl;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+@media screen and (max-width: 972px) {
+    
+    .images1{
+        
+        width: 50%;
+        
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid red; */
+        /* justify-content: space-between; */
+        /* justify-content: center; */
+        margin: 4rem 0rem;
+        
+    }
+
+    .header1{
+        /* border: 1px solid red; */
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .paraf{
+    
+        font-family: "Segoe UI", Tahoma, Verdana,sans-serif;
+        display: flex;
+        margin-top: 1vh;
+        margin-left: 10vh;
+        /* justify-content: center; */
+        width: 100%;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .images1{
+        
+        width: 100%;
+        
+    }
+    .header1{
+        /* border: 1px solid red; */
+        margin-left: -70px;
+    }
+}
